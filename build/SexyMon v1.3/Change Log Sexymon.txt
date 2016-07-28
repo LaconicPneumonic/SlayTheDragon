@@ -1,0 +1,8 @@
+2/14/2014
+Gave images transparent backgrounds
+Converted all images and sounds to wave files
+Added shot delay of 12 frames
+Created sound channels to prevent Sexymon hit and Blast from overwriting eachother
+Changed screen to blue
+fixed list index enemy glitch
+fixed double scoring glitch
