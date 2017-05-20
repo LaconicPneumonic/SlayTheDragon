@@ -1,6 +1,5 @@
 # Import a library of functions called 'pygame'
 import pygame
-import pygame._view
 import random
 import math
 from Player import *
@@ -35,35 +34,35 @@ start_time = 50
 row = 0
 
 #Knight
-Knight = Player("..//Slay the Dragon//Graphics//Knight.gif",10,(350,200),(100,100))
+Knight = Player("../Slay the Dragon/Graphics/Knight.gif",10,(350,200),(100,100))
 
 #Boss Dragon
 
-Dragon = Fire("..//Slay the Dragon//Graphics//Dragon.gif",20,)
+Dragon = Fire("../Slay the Dragon/Graphics/Dragon.gif",20,)
 
 # Castle Constants
-Castle = pygame.image.load("..//Slay the Dragon//Graphics//Castle.gif")
+Castle = pygame.image.load("../Slay the Dragon/Graphics/Castle.gif")
 Castle.set_colorkey(BLACK)
 Castle_size = (200,150)
 
 #Enemies
-Sexymon = pygame.image.load("..//Slay the Dragon//Graphics//Enemy.gif")
+Sexymon = pygame.image.load("../Slay the Dragon/Graphics/Enemy.gif")
 Sexymon.set_colorkey(BLACK)
-Sexymon_Hit = pygame.mixer.Sound("..//Slay the Dragon//Sound//Hit.wav")
+Sexymon_Hit = pygame.mixer.Sound("../Slay the Dragon/Sound/Hit.wav")
 Sexy = pygame.mixer.Channel(1)
 Sexy_rect = pygame.Rect(Sexymon.get_rect())
 Sexymon.set_colorkey(BLACK)
 Enemies = []
 
     #Powered up
-Sexymon_power = pygame.image.load("..//Slay the Dragon//Graphics//Enemy_power.gif")
+Sexymon_power = pygame.image.load("../Slay the Dragon/Graphics/Enemy_power.gif")
 Sexymon_power.set_colorkey(BLACK)
 speed_bonus = 5
 
 #Blaster
-Hadouken = pygame.image.load("..//Slay the Dragon//Graphics//hadouken.gif")
+Hadouken = pygame.image.load("../Slay the Dragon/Graphics/Hadouken.gif")
 Hadouken.set_colorkey(BLACK)
-Hadouken_sound = pygame.mixer.Sound("..//Slay the Dragon//Sound//Shotgun.wav")
+Hadouken_sound = pygame.mixer.Sound("../Slay the Dragon/Sound/Shotgun.wav")
 Hdkn = pygame.mixer.Channel(2)
 Hdkn.set_volume(0.1)
 Hadouken.set_colorkey(BLACK)

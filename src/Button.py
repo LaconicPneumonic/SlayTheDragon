@@ -1,5 +1,4 @@
 import pygame
-import pygame._view
 import math
 
 # Initialize the dream engine

@@ -1,5 +1,4 @@
 import pygame
-import pygame._view
 import math
 BLACK    = (   0,   0,   0)
 WHITE    = ( 255, 255, 255)
@@ -28,7 +27,7 @@ class Player():
 
         self.x1,self.y1,self.x2,self.y2 = start_pos[0],start_pos[1],start_pos[0],start_pos[1]
 
-    ScoreCat = pygame.image.load("..//Slay the Dragon//Graphics//Score CAt.gif")
+    ScoreCat = pygame.image.load("Graphics/Score CAt.gif")
     ScoreCat.set_colorkey(BLACK)
 
     # Health Bar
@@ -85,17 +84,17 @@ class Boss():
 class Fire(Boss):
 
 
-    Fireball_0 = pygame.image.load("..//Slay the Dragon//Graphics//Fireball-0.gif")
+    Fireball_0 = pygame.image.load("../Slay the Dragon/Graphics/Fireball-0.gif")
 
 
     Fireball_0.set_colorkey(BLACK)
 
     Channel = pygame.mixer.Channel(4)
 
-    Enter = pygame.mixer.Sound("..//Slay the Dragon//Sound//Dragon enter.wav")
+    Enter = pygame.mixer.Sound("../Slay the Dragon/Sound/Dragon enter.wav")
 
-    Touch = pygame.mixer.Sound("..//Slay the Dragon//Sound//Dragon touch.wav")
-    Fire = pygame.mixer.Sound("..//Slay the Dragon//Sound//Dragon fire.wav")
+    Touch = pygame.mixer.Sound("../Slay the Dragon/Sound/Dragon touch.wav")
+    Fire = pygame.mixer.Sound("../Slay the Dragon/Sound/Dragon fire.wav")
 
     mouthx = 121
     mouthy = 41

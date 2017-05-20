@@ -68,7 +68,7 @@ class BuildExe:
         self.icon_file = None
 
         #Extra files/dirs copied to game
-        self.extra_datas = ["..//Slay the Dragon//Graphics", "..//Slay the Dragon//Sound","..//Slay the Dragon//Player.pyc","..//Slay the Dragon//Button.pyc"]
+        self.extra_datas = ["../Slay the Dragon/Graphics", "../Slay the Dragon/Sound","../Slay the Dragon/Player.pyc","../Slay the Dragon/Button.pyc"]
 
         #Extra/excludes python modules
         self.extra_modules = []
@@ -85,7 +85,7 @@ class BuildExe:
         #Dist directory
         self.dist_dir ='Sexymonx86'
 
-    ## Code from DistUtils tutorial at http://wiki.python.org/moin/Distutils/Tutorial
+    ## Code from DistUtils tutorial at http:/wiki.python.org/moin/Distutils/Tutorial
     ## Originally borrowed from wxPython's setup and config files
     def opj(self, *args):
         path = os.path.join(*args)

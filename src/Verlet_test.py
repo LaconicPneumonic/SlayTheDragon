@@ -33,7 +33,7 @@ Bob.x = 350
 Bob.v_x = 70
 
 
-Sexymon = pygame.image.load("..//Slay the Dragon//Graphics//Enemy.gif")
+Sexymon = pygame.image.load("../Slay the Dragon/Graphics/Enemy.gif")
 
 
 while not done:
